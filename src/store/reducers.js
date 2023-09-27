@@ -5,6 +5,7 @@ const initialState = {
 };
 
 const rootReducer = (state = initialState, action) => {
+  console.log('action is', action);
   switch (action.type) {
     case ADD_TASK:
       return {

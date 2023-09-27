@@ -9,8 +9,10 @@ class TaskRepository extends TaskRepositoryInterface {
   }
 
   addTask(taskValue) {
-    const newTask = new TaskEntity(Date.now(), taskValue.text);
+    console.log('taskValue is', taskValue);
+    const newTask = new TaskEntity(Date.now(), taskValue);
     tasks.push(newTask);
+    console.log('Inside Add Task', tasks);
   }
 
   deleteTask(taskId) {
