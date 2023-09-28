@@ -17,6 +17,7 @@ const TaskContainer = () => {
 
   const handleAddTask = (text) => {
     const task = taskService.addTask(text);
+    console.log('task console inside container is', task);
     dispatch(addTask(task));
   };
 

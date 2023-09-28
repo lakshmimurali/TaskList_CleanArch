@@ -8,7 +8,7 @@ class TaskService {
   }
 
   addTask(taskValue) {
-    this.taskRepository.addTask(taskValue);
+    return this.taskRepository.addTask(taskValue);
   }
 
   deleteTask(taskId) {

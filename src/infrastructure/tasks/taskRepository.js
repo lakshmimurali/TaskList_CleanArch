@@ -12,7 +12,8 @@ class TaskRepository extends TaskRepositoryInterface {
     console.log('taskValue is', taskValue);
     const newTask = new TaskEntity(Date.now(), taskValue);
     tasks.push(newTask);
-    console.log('Inside Add Task', tasks);
+    console.log('Inside Add Task', newTask, tasks);
+    return newTask;
   }
 
   deleteTask(taskId) {
